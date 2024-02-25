@@ -1,0 +1,286 @@
+body{
+    background-color: beige;
+}
+
+a{
+    border: 2px solid red;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a.logout{
+    background-color: lightblue;
+}
+
+a.pagPrin{
+    background-color: lightgreen;
+}
+
+a.ridireziona{
+    background-color:lightpink;
+}
+
+a.nuovoRegista{
+    background-color: lightyellow;
+}
+
+a.testFattibile{
+    background-color: orange;
+}
+
+a.classifica{
+    background-color: mediumvioletred;
+}
+
+a.guida{
+    background-color: wheat;
+}
+
+#linkGuida{
+    position: absolute;
+    margin: 50px auto; 
+    text-align: center;
+    background-color: wheat;
+    width: fit-content;
+}
+
+nav{
+    justify-self: start;
+    grid-row: 1;
+    background-color: peru;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+nav>ul>li{
+    margin-bottom: 30px;
+}
+
+
+.containerIntroduzione{
+    display: grid;
+    grid-template-columns: min-content 1fr auto;
+    gap: 20px;
+}
+
+.containerIntroduzione img{
+    justify-self: center;
+    height: 30rem;
+    width: auto;
+}
+
+.containerIntroduzione p{
+    white-space: pre-line;
+}
+
+tr{
+    height: 2em;
+}
+
+
+td{
+    text-align: center;
+    color: white;
+}
+
+td, th {
+    border: 3px solid #ccc; 
+}
+
+thead {
+    background-color: #f5f5f5; 
+    color: #333;
+}
+
+tbody {
+    background-color:#1e88e5; 
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #ccc; 
+}
+
+.containerQuizReg{
+    display: grid;
+    grid-template-columns: min-content auto 1fr;
+    gap: 2em;
+}
+
+.containerQuizReg table{
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    margin-right: 0.75em;
+    margin-left: 1em;
+}
+
+.nonSuperato{
+    color: red;
+}
+
+.superato{
+    color: limegreen;
+}
+
+.sbagliato{
+    color: blue;
+}
+
+.containerQuizReg nav{
+    grid-row: 1;
+    grid-column: 1;
+    gap: 2em;
+}
+
+.containerTestS{
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    gap: 2em;
+}
+
+.containerTestS table{
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 0.75em;
+    margin-left: 1em;
+}
+
+.containerTestS p{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.containerTestS .paragrafi{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+a.inTabella{
+    color: white;
+    background-color: #CCCCCC;
+}
+
+.containerTestS td.superato{
+    background-color: green;
+}
+
+.containerTestS td.nonSuperato{
+    background-color: orange;
+}
+
+.paragrafi{
+    grid-column: 3;
+} 
+
+tr.utenteLogin:not(.utenteNonInClassifica) td {
+    background-color: #ccff99;
+    color: black;
+}
+
+
+#quizForm{
+    display: grid;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+#accedi{
+    text-align: center;
+}
+
+.domanda{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+label, input[type="text"], input[type="password"]{
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.insiemeBottoni{
+    text-align: center;
+    margin: 2em;
+}
+
+.insiemeBottoni input{
+    border: 2px solid red;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: greenyellow;
+}
+
+.domanda input[type="radio"] {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+#submitBtn{
+    cursor: pointer;
+    align-self: end;
+    justify-self: center;
+    margin-top: 2em; 
+    font-weight: bold;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid darkred ;
+}
+
+input[type="radio"]:disabled.superato{
+    background-color: limegreen;
+}
+
+input[type="radio"].nonSuperato{
+    background-color: red;
+}
+
+.containerCorrezione{
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    gap: 2em;
+}
+
+.containerCorrezione .paragrafi{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.containerCorrezione .formQuiz{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.containerIndex{
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 2em;
+}
+
+.containerIndex p{
+    font-size: 20px;
+}
